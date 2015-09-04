@@ -1,0 +1,65 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+/***** COLORS    USED *************
+red search: #db2c42;
+museum of art: #a8a6a7;
+light grey member: #edeced;
+text/links: #ea8592;
+dark grey: #cecece;
+blue: #4d93a8;
+complete Reg: blue;
+
+/***** GENERIC STYLES *************/
+/**********************************/
+body{
+	
+}
+
+a{
+	color:#db2c42;
+}
+.wrapper{
+	width: 96%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.main_title{
+	background-color: #edeced;
+}
+.main_title p{
+	text-transform: uppercase;
+	color:gray;
+}
+.lightgreybox{
+	background-color:#edeced
+}
+.darkgreybox{
+	background-color:#cecece; 
+}
+.footer_navigation a{
+	color: #4d93a8;
+}
+
+
+
+
+
+
+/***** SPECIFIC STYLES ************/
+/**********************************/
+
