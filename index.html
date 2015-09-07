@@ -14,31 +14,39 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
         <body>
-            <div class="wrapper">
+            <div class="wrapper clearfix">
                 <header>
                     <img class ="logo" src="img/logo.png" alt"Columbia Museum of Art Logo">
 
                     <nav class="main_navigation">
                         <ul>
-                            <li><a href="#"></a>Visit</li>
-                            <li><a href="#"></a>Learn</li>
-                            <li><a href="#"></a>Arts</li>
-                            <li><a href="#"></a>Events</li>
-                            <li><a href="#"></a>Give &amp; Join</li>
-                            <li><a href="#"></a>About</li>
+                            <li><a href="#">Visit</a></li>
+                            <li><a href="#">Learn</a></li>
+                            <li><a href="#">Arts</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Give &amp; Join</a></li>
+                            <li><a href="#">About</a></li>
                         </ul>
                     </nav>
 
-                    <form class="searchbar">Search</form>
+                    <div class="searchbar">
+                        <input type="text" name="search" id="search" value=""> 
+                       
+                        <div class="button">   
+                            <input type="submit" value="Search CMA">
+                        </div>
+
+                    </div>    
                 </header>
 
+<!-- ****************************************************- -->
 
                 <section class="main_title">
                         <h1>Membership Registration</h1>
                         <p>Be a part of the columbia museum of art</p>
                 </section>
                 
-                <section class="main_content">
+                <section class="benefits">
                     <h2>All CMA Memberships include the Following Benefits:</h2>
                     <ul>
                         <li>Free unlimited admissions for one year</li>
@@ -48,116 +56,159 @@
                         <li>Membership Appreciation Day- Several times a year, the museum offers exclusive members special savings in the gift shop, opportunities to bring a friend, and more.</li>
                         <li>10% discount in the Museum Shop.</li>
                     </ul>
+                </section>
 
-                    <div class="lightgreybox">
-                        <h3>Tell us about yourself<h3>
-                        <form>
-                        </form>
-                        <h3>Choose Your Membership Levels</h3>
-                        <div class="darkgreybox">
-                            <div>
-                                <h3>Individual $50</h3>
-                                <ul>
-                                    <li>Standard Membership Benefits</li>
-                                    <li>Admission benefits for one adult</li>
+<!-- **************************************************** -->
+
+                <div class="form clearfix">
+                    <h3>Tell us about yourself</h3>
+
+                    <fieldset class="user">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" name="firstname" id="firstname" value="">
+                        <label for="firstname">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname" value="">
+                        <label for="firstname">Address:</label>
+                        <input type="text" name="address" id="address" value="">
+                    </fieldset>
+
+                    <fieldset class="user_info">
+                        <label for="username">Choose your username:</label>
+                        <input type="text" name="username" id="username" value="">
+                        <label for="email">email:</label>
+                        <input type="text" name="email" id="email" value="">
+                        <label for="firstname">Confirm email:</label>
+                        <input type="confirmemail" name="confirmemail" id="confirmemail" value="">
+                    </fieldset>
+
+
+
+                    <div class="level"><!--dark grey nested inside form -->
+                    <h2>Choose Your Membership Levels</h2>
+                     
+                        <div class="box">
+                            <h3>Individual $50</h3>
+                            <ul>
+                                <li>Standard Membership Benefits</li>
+                                <li>Admission benefits for one adult</li>
                                 </ul>    
-                            </div>
-                            <div>
-                                <h3>Family $25<h3>
-                                <ul>
-                                    <li>Admission benefits for two adults and all children (18 and older).</li>
-                                    <li>Priority Refistration and 20% discount on summer camp classes</li>
-                                    <li> Free admission to all friends and family.</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3>Patron $250</h3>
-                                <ul>
-                                    <li>All benefits of Family Membership.</li>
-                                    <li>Free admission to almost <a href="#">600 Museums</a> in North America, including over <a href="#">80 Museums</a> across the southeast</li>
-                                    <li>Free admisson for two guests per visit.</li>
-                                    <li>Printed and Mailed Collections quarterly magazine and opening reception invitations</li>
-                                </ul>
-                            </div>
-                        </div> <!---End of Dark Grey Txt Box -->
+                        </div>
+                        <div class="box">
+                            <h3>Family $25</h3>
+                            <ul>
+                                <li>Admission benefits for two adults and all children (18 and older).</li>
+                                <li>Priority Refistration and 20% discount on summer camp classes</li>
+                                <li> Free admission to all friends and family.</li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3>Patron $250</h3>
+                            <ul>
+                                <li>All benefits of Family Membership.</li>
+                                <li>Free admission to almost <a href="#">600 Museums</a> in North America, including over <a href="#">80 Museums</a> across the southeast</li>
+                                <li>Free admisson for two guests per visit.</li>
+                                <li>Printed and Mailed Collections quarterly magazine and opening reception invitations</li>
+                            </ul>
+                        </div>
+                    </div> <!---End of Dark Grey Level Box -->
 
-                        <div class="radiobutton">
-                            <h3>Membership Level<h3>
-                                <label for="radio-choice-1">Individual Membership $50</label>
-                                <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1">
-                                <label for="radio-choice-1">Family Membership $75</label>
-                                <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1">
-                                <label for="radio-choice-1">Patron $250</label>
-                                <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1">
-                        <div>
-                        <div class="checkbox">
-                            <h3>Additional Options<h3>
-                                <label for="checkbox1">Columbia Design League</label>
-                                <input type="checkbox" name"checkbox1"="" id="checkbox1">
-                                <label for="checkbox1">Contemporaries</label>
-                                <input type="checkbox" name"checkbox1"="" id="checkbox1">
-                                <label for="checkbox1">Firends of African American Art &amp; Culture</label>
-                                <input type="checkbox" name"checkbox1"="" id="checkbox1">
-                        <div>
+                    <section ="radio_checkbox clearfix">
+                        <fieldset class="radio"> 
+                            <h3>Membership Level</h3>
+                            <ul>
+                                <li>   
+                                    <input type="radio" name="radio-choice" id="radio-choice-1" value="radio-choice-1">
+                                    <label for="radio-choice-1">Individual Membership $50</label>
+                                </li>
+                                <li>    
+                                    <input type="radio" name="radio-choice" id="radio-choice-1" value="radio-choice-2">
+                                    <label for="radio-choice-1">Family Membership $75</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="radio-choice" id="radio-choice-1" value="radio-choice-3">
+                                    <label for="radio-choice-1">Patron $250</label>
+                                </li>
+                            </ul>
+                        </fieldset>
 
+                
+                        <fieldset class="checkbox">
+                            <h3>Additional Options</h3>
+                            <ul>
+                                <Li> 
+                                    <input type="checkbox" name"checkbox1"="" id="checkbox1">
+                                    <label for="checkbox1">Columbia Design League</label>
+                                </li>
+                                <li>        
+                                    <input type="checkbox" name"checkbox2"="" id="checkbox2">
+                                    <label for="checkbox2">Contemporaries</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name"checkbox3"="" id="checkbox3">
+                                    <label for="checkbox3">Firends of African American Art &amp; Culture</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </section>
+                        
+                    <div class="complete_registration button">
+                        <input type="submit" value="Complete Registration">
+                    </div>
+                </div><!---End of Light Grey form box-->
 
-
-                        <div class="complete_registration_button">
-                            <input type="submit" value="Submit">
-                        <div>
-                    </div><!---End of Light greybox-->
-                </section><!--End of Main Content-->
 
                 <section class="prefooter">
                     <ul>
-                        <h3>Tickets</h3>
+                        <h4>Tickets</h4>
                         <li> 
                             <a href="#">Upcoming Events</a>
                             <a href="#">Chamer Music on Main</a>
                             <a href="#">Talks &amp; Tours</a>
                             <a href="#">Art School for Adults</a>
-                            <a href="#">Are School for Children</a>
+                            <a href="#">Art School for Children</a>
                             <a href="#">Affilate Group Events</a>
                         </li>
-                        <h3>Membership</h3>
+                    </ul>
+                    
+                    <ul>
+                        <h4>Membership</h4>
                         <li>
                             <a href="#">Join</a>
                             <a href="#">Premiere Sociciety Membership</a>
                         </li>
-                        <h3>Donations</h3>
-                        <li>
+                    </ul>
+                    
+                    <ul>
+                        <h4>Donations</h4>
+                        <li>  
                             <a href="#">Annual Fund</a>
                         </li>
                     </ul>
-                <section>
+                </section>
+            </div><!---end of Wrapper-->
 
-                <footer>
-                    <div class="address">
-                            <p>Columbia Museum of Art</p>
-                            <p>PO Box 2068 Columbis, SC 29202</p>
-                            <p>1515 Main Street|803.799.2810</p>
-                    </div>
+            <footer>
+                <div class="address">
+                    <p>Columbia Museum of Art</p>
+                    <p>PO Box 2068 Columbis, SC 29202</p>
+                    <p>1515 Main Street | 803.799.2810</p>
+                </div>
                     
-                    <nav class="footer_navigation">
-                        <ul>
-                            <li><a href="#"></a>Upcoming Events</li>
-                            <li><a href="#"></a>Chamber of Music on Main</li>
-                            <li><a href="#"></a>Talks &amp; Tours</li>
-                            <li><a href="#"></a>Art School for Adults</li>
-                            <li><a href="#"></a>Art School for Adults</li>
-                            <li><a href="#"></a>Affiliate Group Events</li>
-                        </ul>
-                    </nav>
+                <nav class="footer_navigation">
+                    <ul>
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Chamber of Music on Main</a></li>
+                        <li><a href="#">Talks &amp; Tours</a></li>
+                        <li><a href="#">Art School for Children </a></li>
+                        <li><a href="#">Art School for Adults</a></li>
+                        <li><a href="#">Affiliate Group Events</a></li>
+                    </ul>
+                </nav>
+            </footer>
 
-                </footer>
-
-             </div> <!---wrapper-->
 
             
-           
-
-
-
+    
         
         <script src="js/script.js"></script>
     </body>

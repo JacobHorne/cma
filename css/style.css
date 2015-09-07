@@ -14,6 +14,9 @@
   zoom: 1; /* ie 6/7 */
 }
 
+
+
+
 /***** COLORS    USED *************
 red search: #db2c42;
 museum of art: #a8a6a7;
@@ -26,40 +29,566 @@ complete Reg: blue;
 /***** GENERIC STYLES *************/
 /**********************************/
 body{
-	
+	font-family: Arial, sans-serif;
 }
 
 a{
 	color:#db2c42;
 }
+
 .wrapper{
-	width: 96%;
+	width: 90%;
 	margin: 0 auto;
 	background-color: white;
+	position: relative;
 }
-
+.logo{
+	display:block;
+	margin: 0 auto;
+}
 .main_title{
-	background-color: #edeced;
+	width: 100%;
+	display:block;
+	border-top: 1px solid #efefef;
+    margin-top: 30px;
+    padding:5px;
+}
+.main_title h1{
+	
 }
 .main_title p{
 	text-transform: uppercase;
-	color:gray;
+	color: #adabac;
 }
-.lightgreybox{
-	background-color:#edeced
+/***************************************/
+
+.main_navigation{
+	display:block;
+    border-bottom: 1px #efefef;
 }
-.darkgreybox{
-	background-color:#cecece; 
+.main_navigation ul{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	margin:0 auto;
+	border-bottom: 1px solid #efefef;
 }
+.main_navigation li{
+	border: 1px solid #efefef;
+	border-bottom: none;
+	display: block;
+	text-decoration: none;
+}
+.main_navigation a{
+	color:#eb8894;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+}
+
+/**************************************/
+.searchbar{
+	background-color: #edeced;
+	display:block;
+}
+
+.button input{
+	background-color:#db2c42;
+	color: white;
+	padding:16px 9% 14px 8%;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 1em;
+	text-align: center;
+	display: block;
+	border: none;
+	
+}
+
+
+
+
+.searchbar input{
+	padding:10px 0 10px 0;
+	border-radius: 5px;
+	width:100%;
+
+}
+/************************************/
+.benefits{
+	margin-bottom: 30px;
+}
+
+.benefits ul{
+	border-bottom: 1px solid #efefef;
+    padding-bottom: 30px;
+}
+
+
+/*******************************************/
+.user input{
+	display:block;
+	width:100%;
+	padding: 10px 0 10px 0;
+	box-shadow: inset 1px 2px rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+
+.user_info input{
+	display:block;
+	width: 100%;
+	padding: 10px 0 10px 0;
+	box-shadow: inset 1px 2px rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+
+.user{
+	border:none;
+}
+.user_info{
+	border:none;
+}
+
+/*******************************************/
+
+
+.form{
+	display:block;
+	padding:20px;
+	background-color:#edeced; 
+}
+
+/*******************************************/
+
+.box{
+	display:block;
+	background-color: white;
+	border-radius: 5px;
+	padding: 15px; 
+	margin-bottom: 10px;
+}
+
+.box h3{
+	text-align: center;
+}
+
+.box li{
+
+}
+
+/***************************************/
+
+.radio {
+	border:none;
+	margin: 40px 0 30px 0;
+}
+.radio h3{
+	margin:0px;
+}	
+
+.radio ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+.radio label{
+	text-align: left;
+}
+
+.checkbox {
+	border:none;
+	margin: 40px 0 30px 0;
+}
+.checkbox h3{
+	margin:0px;
+}	
+
+.checkbox ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+.checkbox label{
+	text-align: left;
+}
+/****************************************/
+
+.complete_registration{
+	border-top: 1px solid #e3e2e3;
+	padding-top:30px;
+}
+/**************************************/
+
+
+.prefooter{
+	display:block;
+	width:100%;
+	margin-bottom: 30px;
+	border-top: 1px solid #efefef;
+	margin-top: 50px;
+}
+.prefooter ul{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	
+	
+
+}
+.prefooter li{
+	border: 1px solid #efefef;
+
+
+}
+.prefooter a{
+	display:block;
+	border-top: 1px solid #efefef;
+	padding:10px;
+	text-decoration: none;
+	text-align: center;
+}
+
+/********************************/
+
+
+footer{
+	width: 100%;
+	background-color: #333333;
+	padding-top: 45px;
+	padding-bottom: 25px;
+}
+.address{
+	text-align: center;
+	color:white;
+	padding:45px;
+}
+.footer_navigation {
+	display:inline-block;
+	margin-left: 30px;
+}
+
+.footer_navigation ul{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	display: inline-block;
+	
+}
+
+.footer_navigation li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
 .footer_navigation a{
-	color: #4d93a8;
+	color: #56b8d4;
+	display: block;
+	font-weight: 800;
+	padding:15px 0 15px 0;
+	font-size: .8em;
+	line-height: 0px;
+	text-align: center;
+
+}/*end of 320*/
+
+
+
+/**********************************************/
+/**********************************************/
+
+@media screen and (min-width: 660px){
+	
+	.searchbar{
+		background-color: white;
+		display:block;
+		
+	}
+
+	.searchbar input{
+		padding:10px 0 10px 0;
+		border-radius: 5px;
+		display:inline-block;
+
+	}
+
+	.button input{
+		background-color:#db2c42;
+		color: white;
+		padding:16px 9% 14px 8%;
+		border-radius: 5px;
+		text-decoration: none;
+		font-size: 1em;
+		text-align: center;
+		border: none;
+		display: inline-block;
+	}
+/********************************************/
+/********************************************/
+
+	.user input{
+	
+	}
+
+	.user_info input{
+
+	}
+
+	.user{
+		float: left;
+		width: 48%;
+		padding: 0 4% 0 0;
+		margin: 0;
+	}
+	
+	.user_info{
+		width: 48%;
+		padding: 0;
+		margin: 0;
+	}
+/********************************************/
+/********************************************/
+	.radio_checkbox{
+		display: block;
+		width: 100%
+	}
+	
+	.radio {
+		border:none;
+		margin: 0;
+		display:inline-block;	
+	}
+
+	.radio h3{
+		margin:0px;
+	}	
+
+	.radio ul{
+		list-style: none;
+		margin:0;
+		padding:0;
+	}
+
+	.radio label{
+		text-align: left;
+	}
+
+	.checkbox {
+		border:none;
+		margin: 0px;
+		display: inline-block;
+	}
+	.checkbox h3{
+		margin:0px;
+	}	
+
+	.checkbox ul{
+		list-style: none;
+		margin:0;
+		padding:0;
+	}
+
+	.checkbox label{
+		text-align: left;
+	}
+
+
+/********************************************/
+/********************************************/
+
+	.prefooter{
+	display:block;
+	width:100%;
+	margin-bottom: 50px;
+	border-top: 1px solid #efefef;
+	margin-top: 50px;
+	}
+
+	.prefooter ul{
+	list-style: none;
+	margin-left:0px;
+	padding:15px;
+	display:inline-block;
+	vertical-align: top;
+	}
+
+	.prefooter li{
+	border: none;
+
+	}
+	.prefooter a{
+	display:block;
+	border:none;
+	padding:5px 0 5px 0;
+	text-align: left;
+	text-decoration: underline;
+	}
+
+/********************************************/
+/********************************************/
+	.footer_navigation {
+		display:block;
+	}
+
+	.footer_navigation ul{
+		list-style: none;
+		margin:0px;
+		padding:0px;
+		display: inline-block;
+	
+	}
+
+	.footer_navigation li{
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	.footer_navigation a{
+		color: #56b8d4;
+		display: block;
+		font-weight: 800;
+		padding:15px 0 15px 0;
+		font-size: .8em;
+		line-height: 0px;
+		text-align: center;
+	}	
+
+} /**end of 660**/
+
+
+/********************************************/
+/********************************************/
+/********************************************/
+@media screen and (min-width: 840px){
+	
+	.logo{
+	display:block;
+	margin: 0px;
+	padding: 0px;
+	}
+
+
+	.searchbar{
+		background-color: #edeced;
+		display:block;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+
+/********************************************/
+/********************************************/
+/********************************************/
+	.main_navigation{
+		padding:none;
+	    border: 1px solid #efefef;
+	    display: block;
+	}
+	.main_navigation ul{
+		display: block;
+		list-style: none;
+		margin:0px;
+		padding:0px;
+		width: 70%;
+		margin:0 auto;
+		border:none;
+	}
+	.main_navigation li{
+		display: inline-block;
+		border: none;
+		text-decoration: none;
+	}
+	.main_navigation a{
+		color:#eb8894;
+		display: inline-block;
+		text-align: center;
+		padding: 10px;
+		text-decoration: none;
+	}
+/********************************************/
+/********************************************/
+/********************************************/
+
+
+
+	.level{
+		background-color: #cecece;
+		width: 100%;
+		margin-bottom: 40px;
+		padding: 2px;
+
+	}
+	.box{
+		display: inline-block;
+		width: 28%;
+		vertical-align: top;
+	}
+
+/********************************************/
+/********************************************/
+/********************************************/
+	
+	.prefooter{
+		margin-bottom: 50px;
+		border-top: 1px solid #efefef;
+		margin-top: 50px;
+		margin: 0 auto;
+	}
+
+	.prefooter ul{
+		list-style: none;
+		padding:15px;
+		display:inline-block;
+		vertical-align: top;
+		width: 28%;
+	}
+
+	.prefooter a{
+		display:block;
+		border:none;
+		padding:5px 0 5px 0;
+		text-align: left;
+		text-decoration: underline;
+	}
+
+/********************************************/
+/********************************************/
+/********************************************/
+	
+	.Complete_Registration input{
+		background-color: blue;
+		color: white;
+		padding:16px 9% 14px 8%;
+		border-radius: 5px;
+		text-decoration: none;
+		font-size: 1em;
+		text-align: center;
+		border: none;
+		display: inline-block;
+	}
+
 }
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+
+@media screen and (min-width: 1024px){
+	.main_title{
+		background-color: #ececec;
+	}
+	.form{
+		width:70%;
+		float:left;
+
+	}
+
+	.prefooter{
+	}
+}
+	
 
 
-
-
-
-
-/***** SPECIFIC STYLES ************/
-/**********************************/
 
